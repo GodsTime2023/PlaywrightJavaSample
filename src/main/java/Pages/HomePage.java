@@ -11,6 +11,7 @@ public class HomePage {
     }
 
     private String Elements = "Elements";
+    private String TextBox = "Text Box";
 
 
     public boolean VerifyPageUrl(){
@@ -18,4 +19,6 @@ public class HomePage {
     }
 
     public void clickElements(){ _page.getByText(Elements).click(); }
+
+    public void clickTextBox(){ _page.locator("//li[@id='item-0'][.='Text Box']").click(); }
 }
